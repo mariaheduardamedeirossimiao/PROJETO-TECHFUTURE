@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% block titulo %}
+        TechFuture
+        {% endblock %}
+    </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="/">
+            TechFuture
+        </a>
+
+        <div>
+
+            <a class="btn btn-light" href="/">
+                Início
+            </a>
+
+            <a class="btn btn-light" href="/cursos">
+                Cursos
+            </a>
+
+            <a class="btn btn-light" href="/professores">
+                Professores
+            </a>
+
+            <a class="btn btn-light" href="/contato">
+                Contato
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="container mt-5">
+
+    {% block conteudo %}
+    {% endblock %}
+
+</div>
+
+<footer class="bg-dark text-white text-center p-3 mt-5">
+
+    <p>
+        2026 - Sistema Escolar TechFuture
+    </p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
